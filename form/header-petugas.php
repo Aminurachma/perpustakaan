@@ -55,7 +55,7 @@
                         <a href="input-peminjaman.php">Input Data Peminjaman</a>
                     </li>
                     <li>
-                        <a href="laporan_peminjaman.php">Laporan Peminjaman</a>
+                        <a href="laporan-peminjaman.php">Laporan Peminjaman</a>
                     </li>
                 </ul>
 			</li>
@@ -72,7 +72,7 @@
                         <a href="input-buku.php">Input Data Buku</a>
                     </li>
                     <li>
-                        <a href="laporan_buku.php">Laporan Buku</a>
+                        <a href="laporan-buku.php">Laporan Buku</a>
                     </li>
                 </ul>
 			</li>
@@ -86,24 +86,24 @@
                         <a href="data-anggota.php">Data Anggota</a>
                     </li>
                     <li>
-                        <a href="laporan_anggota.php">Laporan Anggota</a>
+                        <a href="laporan-anggota.php">Laporan Anggota</a>
                     </li>
                 </ul>
 			</li>
 			
 			<li class="parent">
 				<a href="#">
-					<span class="glyphicon glyphicon-user"></span>&nbsp;Staff <span data-toggle="collapse" href="#sub-item-4" class="icon pull-right"><em class="glyphicon glyphicon-arrow-down"></em></span> 
+					<span class="glyphicon glyphicon-user"></span>&nbsp;Petugas <span data-toggle="collapse" href="#sub-item-4" class="icon pull-right"><em class="glyphicon glyphicon-arrow-down"></em></span> 
 				</a>
 				<ul class="children collapse" id="sub-item-4">
 					<li>
-                        <a href="data-staff.php">Data Staff</a>
+                        <a href="data-Petugas.php">Data Petugas</a>
                     </li>
                     <li>
-                        <a href="input-staff.php">Input Data Staff</a>
+                        <a href="input-Petugas.php">Input Data Petugas</a>
                     </li>
                     <li>
-                        <a href="laporan_staff.php">Laporan Staff</a>
+                        <a href="laporan-Petugas.php">Laporan Petugas</a>
                     </li>
                 </ul>
 			</li>
@@ -116,19 +116,18 @@
 				</a><a href="#">
 				<ul class="children collapse" id="sub-item-5">
                     <li>
-                        <a href="laporan_buku.php">Laporan Buku</a>
+                        <a href="laporan-buku.php">Laporan Buku</a>
                     </li>
                     <li>
-                        <a href="laporan_peminjaman.php">Laporan Peminjaman</a>
+                        <a href="laporan-peminjaman.php">Laporan Peminjaman</a>
                     </li>
 					<li>
-                        <a href="laporan_anggota.php">Laporan Anggota</a>
+                        <a href="laporan-anggota.php">Laporan Anggota</a>
                     </li>
 					<li>
-                        <a href="laporan_staff.php">Laporan Staff</a>
+                        <a href="laporan-Petugas.php">Laporan Petugas</a>
                     </li>
                 </ul>
 			</li>
           </ul>
->>>>>>> e8287590865ffc0f00f45b72dc4bd066cd7e6bf6
         </div>

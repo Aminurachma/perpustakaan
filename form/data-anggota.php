@@ -8,7 +8,7 @@ include "header.php";
 
 	<div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Data Buku</h1>
+                    <h1 class="page-header">Data Anggota</h1>
                 </div>
                 <!-- /.col-lg-12 -->
 	</div>
@@ -16,32 +16,28 @@ include "header.php";
 		<div class="col-lg-8 col-md-6">
         <table class="table table-responsive">
         <thead>
-          <td>No.</td>
-          <td>ID Buku</td>
-          <td>Cover Buku</td>
-          <td>Judul Buku</td>
-          <td>Pengarang</td>
-          <td>Penerbit</td>
-          <td>Tanggal Masuk</td>
-          <td>Action</td>
+            <th>No</th>
+		    <th>Id Anggota</th>
+		    <th>Nama Anggota</th>
+		    <th>Alamat</th>
+		    <th>Nomor Telepon</th>
+		    <th colspan="3">Action</th>
         </thead>
         <tbody>
           <?php
             $no = 0;
-            $query = mysqli_query($con, "SELECT * FROM buku");
+            $query = mysqli_query($con, "SELECT * FROM anggota");
             while ($data = mysqli_fetch_array($query)) {
               $no++;
           ?>
-          <td><?php echo $no ?></td>
-          <td><?php echo $data['ID_BUKU'] ?></td>
-          <td><img src="../template/img/buku/<?php echo $data['GAMBAR_BUKU']?>" class="img-responsive"></td>
-          <td><?php echo $data['JUDUL_BUKU'] ?></td>
-          <td><?php echo $data['PENGARANG'] ?></td>
-          <td><?php echo $data['PENERBIT'] ?></td>
-          <td><?php echo $data['TGL_MASUK'] ?></td>
+            <td><?php echo $no ?></td>
+		    <td><?php echo $data['ID_ANGGOTA']; ?></td>
+			<td><?php echo $data['NAMA_ANGGOTA']; ?></td>
+			<td><?php echo $data['ALAMAT']; ?></td>
+			<td>0<?php echo $data['NO_TELP']; ?></td>
           <td>
-            <a href="input-buku.php?ID_BUKU=<?php echo $data['ID_BUKU'] ?>">Edit</a>
-            <a onclick="if(confirm('Apakah anda yakin ingin menghapus data ini ??')){ location.href='hapus_buku.php?id_buku=<?php echo $tampil['id_buku']; ?>' }" >Hapus</a></td>
+            <a href="input-anggota.php?ID_ANGGOTA=<?php echo $data['ID_ANGGOTA'] ?>">Edit</a>
+            <a onclick="if(confirm('Apakah anda yakin ingin menghapus data ini ??')){ location.href='hapus_anggota.php?id_anggota=<?php echo $tampil['id_anggota']; ?>' }" >Hapus</a></td>
           </td>
         </tbody>
         <?php } ?>

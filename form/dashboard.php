@@ -24,7 +24,7 @@ $sql_bk = "select count(*) as JUM from buku";
 $result_bk = mysqli_query($con,$sql_bk);
 $row_bk = mysqli_fetch_array($result_bk,MYSQLI_ASSOC);
 
-$sql_peminjaman = "select count(*) as JUM from peminjaman where username='$user_check'";
+$sql_peminjaman = "select count(*) as JUM from peminjaman   ";
 $result_peminjaman = mysqli_query($con,$sql_peminjaman);
 $row_peminjaman = mysqli_fetch_array($result_peminjaman,MYSQLI_ASSOC);
 
@@ -148,4 +148,3 @@ if ($row['id_role']== 1 || $row['id_role']== 2){
 <?php 
 include("footer.php");
 ?>
->>>>>>> e8287590865ffc0f00f45b72dc4bd066cd7e6bf6

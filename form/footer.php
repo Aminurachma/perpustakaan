@@ -6,8 +6,8 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; 2016 - <?php echo date("Y"); ?> by Yudha Tri Putra </p>
-					<p>web ini hanya sample saja.</p>
+                    <p>Copyright &copy; <?php echo date("Y"); ?> by Aminurachma, Yulvi, Anyes</p>
+					<p>web ini hanya tugas</p>
                 </div>
             </div>
         </footer>
@@ -20,4 +20,3 @@
 	<script src="../template/js/bootstrap.min.js"></script>
 </body>
 </html>
->>>>>>> e8287590865ffc0f00f45b72dc4bd066cd7e6bf6

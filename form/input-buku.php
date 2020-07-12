@@ -75,7 +75,7 @@ if(isset($_POST['btnsubmit'])) {
 				
 				if ($con->query($query)) {
 					$con->close();
-					header('location:data_buku.php');
+					header('location:data-buku.php');
 				}
 		} else {
 			$error = "Terjadi kesalahan saat upload file.";
@@ -85,12 +85,12 @@ if(isset($_POST['btnsubmit'])) {
 	}else{
 		//update buku
 			$cover = $tampil_data['GAMBAR'];
-			$query = "UPDATE buku SET JUDUL_BUKU_buku ='$JUDUL_BUKU',PENGARANG = '$PENGARANG',PENERBIT = '$PENERBIT',GAMBAR = '$cover',TGL_MASUK = curdate(),ID_PETUGAS = '$ID_PETUGAS',KET = 'Tersedia'
+			$query = "UPDATE buku SET JUDUL_BUKU ='$JUDUL_BUKU',PENGARANG = '$PENGARANG',PENERBIT = '$PENERBIT',GAMBAR = '$cover',TGL_MASUK = curdate(),ID_PETUGAS = 'PK001',KET = 'Tersedia'
 					WHERE ID_BUKU = $id_bk";
 	
 			if ($con->query($query)) {
 				$con->close();
-				header('location:data_buku.php');
+				header('location:data-buku.php');
 			}
 	}
 }
